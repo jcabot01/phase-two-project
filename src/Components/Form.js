@@ -12,6 +12,7 @@ function Form({ onTeacherFormSubmit }) {
 
   function handleSubmit(e) {
     e.preventDefault();
+    //maybe add useNavigate to go back Home after submit
     const addNewTeacher = {
       id: uuidv4(),
       name: name,

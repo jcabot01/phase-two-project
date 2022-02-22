@@ -1,19 +1,64 @@
 {
-  "posts": [
+  "teachers": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "Sydney Reed",
+      "instrument": "Clarinet",
+      "image": "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "years": "5",
+      "email": "sydney.the.best.clarinet.player.ever@gmail.com",
+      "phone": "(555) 555-5555",
+      "experience": "My name is Sidney, I have been teaching clarinet privately for over 5 years.  I have also helped local school districts during contest season to help them prepare."
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "name": "Frank Foster",
+      "instrument": "Percussion",
+      "image": "https://images.pexels.com/photos/7092613/pexels-photo-7092613.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "years": "20",
+      "email": "frank.foster@gmail.com",
+      "phone": "(555) 555-5555",
+      "experience": "I have extensive experience in teaching and performing percussion at all levels of mastery.  I can teach marching percussion, drumset, percussion ensemble, solo literature, steel band, beginning percussion, and world percussion."
+    },
+    {
+      "id": 3,
+      "name": "Charlene Ives",
+      "instrument": "Trumpet",
+      "image": "https://images.pexels.com/photos/5905898/pexels-photo-5905898.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "years": "0",
+      "email": "charleysangel@hotmail.com",
+      "phone": "(555) 555-5555",
+      "experience": "I am a first year teacher looking to share my knowledge and experience.  While student teaching, I gained valuable experience assisting my mentor program.  I was fortunate enough to teach the beginning trumpet class and conduct the 3rd Concert Band at Spring Contest."
+    },
+    {
+      "id": 4,
+      "name": "Freddie DaFreeloader",
+      "instrument": "Trombone",
+      "image": "https://images.pexels.com/photos/6326377/pexels-photo-6326377.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "years": "15",
+      "email": "milesdavisfan@lycos.com",
+      "phone": "(555) 555-5555",
+      "experience": "I am mainly looking for a jazz gig. I don't like teaching marching band."
+    },
+    {
+      "id": 5,
+      "name": "Marcia Pantera",
+      "instrument": "Guitar",
+      "image": "https://images.pexels.com/photos/7120421/pexels-photo-7120421.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "years": "9",
+      "email": "marcia1990@excite.com",
+      "phone": "(555) 555-5555",
+      "experience": "My name is Marcia, and I have a passion for performing and teaching guitar.  I love the feeling of playing duets with my students.  I am always in awe of their musicianship and technical abilities."
+    },
+    {
+      "id": 6,
+      "name": "Natalie Flamtaps",
+      "instrument": "Percussion",
+      "image": "https://images.pexels.com/photos/5306461/pexels-photo-5306461.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "years": "21",
+      "email": "natalie.flamtaps@gmail.com",
+      "phone": "(555) 555-5555",
+      "experience": "My name is Natalie, I have been teaching all levels of percussion for the past 21 years.  When it comes to music education, I able to bring my wealth of knowledge and experiece, which I gained attending Juliard and performing in the New World Symphony."
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
