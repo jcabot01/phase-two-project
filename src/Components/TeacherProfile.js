@@ -1,11 +1,28 @@
-import React from 'react'
+import React from 'react';
+import { useParams } from "react-router-dom";
 
-function TeacherProfile() {
+function TeacherProfile({ name, image, instrument, years, email, phone, experience }) {
+  const { id } = useParams();
 
-  //render additional data here into a single page, with all db.json data visible
   
   return (
-    <div>TeacherProfile</div>
+    <div>
+      teacher stuff {id}
+      <h2 className='teacher-name'>{name}</h2>
+      <img 
+        className='teacher-image' 
+        src={image} 
+        alt={name}
+      />
+      <h3 className='instrument'>{instrument}</h3>
+      <p className='years'>Experience: {years} years</p>
+      <ul className='contact'>
+       <li>Phone #: {phone}</li> 
+       <li>Email: {email}</li>
+      </ul>
+      <p><b>Teaching Experience:</b> {experience}</p>
+
+    </div>
   )
 }
 

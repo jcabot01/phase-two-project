@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Search({ search, setSearch }) { //pass search up to App; to adjust state of Gallery
+function Search({ search, setSearch}) { //pass search up to App; to adjust state of Gallery
   
   function handleSearch(e) {
     setSearch(e.target.value)
