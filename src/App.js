@@ -40,7 +40,7 @@ function App() {
       </nav>
       <Routes>
         <Route path="/form" element={<Form onTeacherFormSubmit={onTeacherFormSubmit}/>} />
-        <Route path="/teacher/:id" element={<TeacherProfile teachers={teachers}/>} />
+        <Route path="/teacher/:name" element={<TeacherProfile teachers={teachers}/>} />
         <Route exact path="/" element={<TeacherContainer teachers={searchTeachers} onDeleteClick={onDeleteClick} />} />
         <Route path ="*" element="404 PAGE NOT FOUND"/>
       </Routes>

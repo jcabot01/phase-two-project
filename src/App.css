@@ -1,9 +1,79 @@
-/* className="brand-name" */
-/* className="home" */
-/* className="add-new" */
-/* className="nav" */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.nav {
+  background-color: rgba(9, 33, 253, 0.986);
+  display: flex;
+  margin-top: 50px;
+}
+
+.brand-name {
+  color: white;
+  display: flex;
+  font-size: xx-large;
+  margin-left: 70px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.home {
+  color: white;
+  display: flex;
+  font-size: x-large;
+  text-decoration: none;
+  margin-left: 40%;
+  margin-top: 15px;
+}
+
+.add-new {
+  color: white;
+  display: flex;
+  font-size: x-large;
+  text-decoration: none;
+  margin-left: 6%;
+  margin-top: 15px;
+}
+
+.search-bar {
+  display: flex;
+  margin-left: 6%;
+  margin-top: 15px;
+  margin-bottom: 1%;
+}
+
+.teachers-container {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.teacher-name {
+  margin: auto;
+}
+
+.teacher-card-div {
+  height: 225px;
+  width: auto;
+  position: relative;
+}
+
+/* .teacher-image {
+
+} */
+
 /* className='teacher-name' */
-/* className='teacher-card-div' */
+
 /* className='favorite-btn' */
 /* className='delete-btn */
 /* className='years' */
+
+/* className='profile-container' */
+/* className='profile-card' */

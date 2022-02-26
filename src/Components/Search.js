@@ -7,7 +7,7 @@ function Search({ search, setSearch}) { //pass search up to App; to adjust state
   }
 
   return (
-    <div>
+    <div className="search-bar">
       <input 
         type="text"
         id="search"
