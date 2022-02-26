@@ -18,13 +18,17 @@ function TeacherProfile({ teachers }) {
                 src={teacher.image} 
                 alt={teacher.name}
               />
-              <h3 className='profile-instrument'>{teacher.instrument}</h3>
-              <p className='profile-years'>Experience: {teacher.years} years</p>
-              <ul className='contact'>
-              <li>Phone #: {teacher.phone}</li> 
-              <li>Email: {teacher.email}</li>
-              </ul>
-              <p><b>Teaching Experience:</b> {teacher.experience}</p>
+              <div className='profile-teacher-info'>
+                <h3 className='profile-instrument'>{teacher.instrument}</h3>
+                <p className='profile-years'>Experience: {teacher.years} years</p>
+                <ul className='contact'>
+                <li className='contact'><b>Phone #:</b> {teacher.phone}</li> 
+                <li className='contact'><b>Email:</b> {teacher.email}</li>
+                </ul>
+                <br></br>
+                <p className='profile-experience-title'><b>Teaching Experience:</b></p>
+                  <p>{teacher.experience}</p>
+              </div>
             </div>
         ))}
       </div>

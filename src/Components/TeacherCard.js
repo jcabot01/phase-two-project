@@ -31,9 +31,17 @@ function TeacherCard({ teachers:{id}, teachers, onDeleteClick }) {
         <h3 className='instrument'>{teacher.instrument}</h3>
         <p className='years'>Experience: {teacher.years} years</p>
         {isLiked ? (
-          <button className='favorite-btn' onClick={() => setIsLiked(false)} >☆</button>
+          <button className='favorite-btn' 
+            onClick={() => setIsLiked(false)} 
+          >
+            ☆
+          </button>
         ) : (
-          <button onClick={() => setIsLiked(true)} >⭐</button>
+          <button 
+            onClick={() => setIsLiked(true)} 
+          >
+            ⭐
+          </button>
         )}
         <button className='delete-btn' onClick={handleClick}>🗑️</button>
       </div>

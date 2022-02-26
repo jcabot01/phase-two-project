@@ -53,6 +53,7 @@ body {
   justify-content: center;
   list-style: none;
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
   margin-top: 50px;
   
@@ -60,7 +61,7 @@ body {
 
 .teacher-name {
   font-size: x-large;
-  margin-left: 30%;
+  align-content: center;
 }
 
 .teacher-card-div {
@@ -70,6 +71,9 @@ body {
   margin-top: 50px;
   margin-right: 5%;
   margin-left: 5%;
+  align-items: center;
+  border-width: 5px;
+  border-color: blue;
 }
 
 section {
@@ -79,24 +83,64 @@ section {
 }
 
 .teacher-image {
+  height: 275px;
+  width: 200px;
+  margin-left: 20px;
+}
+
+.favorite-btn {
+  border: none;
+  background: none;
+  padding: 0 0.25rem;
+  cursor: pointer;
+}
+
+.delete-btn {
+  border: none;
+  background: none;
+  padding: 0 0.25rem;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  border-color: firebrick;
+  cursor: pointer;
+}
+
+/* profile page CSS is below this line */
+
+
+.profile-container {
+  margin-top: 40px;
+  border-width: 4px;
+  border-color: blue;
+}
+
+.profile-card {
+  width: 1000px;
+  margin-left: 40%;
+}
+
+.profile-teacher-image {
+  margin-top: 20px;
+  margin-left: 33%;
   height: 550px;
-  width: 300px;
+  width: 430px;
+}
+.profile-experience-title {
+  margin-left: 50px;
 }
 
-
-
-
-.profile-container .profile-instrument {
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.profile-teacher-name {
+  margin-left: 33%;
 }
 
-
+.contact {
+  text-decoration: underline;
+}
 /* className='teacher-name' */
 
-/* className='favorite-btn' */
-/* className='delete-btn */
+
 /* className='years' */
 
 /* className=' */
