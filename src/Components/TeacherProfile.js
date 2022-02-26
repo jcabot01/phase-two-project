@@ -12,14 +12,14 @@ function TeacherProfile({ teachers }) {
           .filter((teacher) => teacher.name === name)
           .map((teacher, index) => (
             <div key={index} className='profile-card'>
-              <h2 className='teacher-name'>{teacher.name}</h2>
+              <h2 className='profile-teacher-name'>{teacher.name}</h2>
               <img 
-                className='teacher-image' 
+                className='profile-teacher-image' 
                 src={teacher.image} 
                 alt={teacher.name}
               />
-              <h3 className='instrument'>{teacher.instrument}</h3>
-              <p className='years'>Experience: {teacher.years} years</p>
+              <h3 className='profile-instrument'>{teacher.instrument}</h3>
+              <p className='profile-years'>Experience: {teacher.years} years</p>
               <ul className='contact'>
               <li>Phone #: {teacher.phone}</li> 
               <li>Email: {teacher.email}</li>

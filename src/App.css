@@ -50,24 +50,48 @@ body {
 }
 
 .teachers-container {
+  justify-content: center;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 50px;
+  
 }
 
 .teacher-name {
-  margin: auto;
+  font-size: x-large;
+  margin-left: 30%;
 }
 
 .teacher-card-div {
   height: 225px;
   width: auto;
   position: relative;
+  margin-top: 50px;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
-/* .teacher-image {
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
 
-} */
+.teacher-image {
+  height: 550px;
+  width: 300px;
+}
+
+
+
+
+.profile-container .profile-instrument {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 
 /* className='teacher-name' */
 
@@ -75,5 +99,5 @@ body {
 /* className='delete-btn */
 /* className='years' */
 
-/* className='profile-container' */
+/* className=' */
 /* className='profile-card' */
