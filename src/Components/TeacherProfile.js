@@ -10,8 +10,8 @@ function TeacherProfile({ teachers }) {
       <div className='profile-container'>
         {teachers
           .filter((teacher) => teacher.name === name)
-          .map((teacher, index) => (
-            <div key={index} className='profile-card'>
+          .map((teacher, id) => (
+            <div key={id} className='profile-card'>
               <h2 className='profile-teacher-name'>{teacher.name}</h2>
               <img 
                 className='profile-teacher-image' 
@@ -20,14 +20,16 @@ function TeacherProfile({ teachers }) {
               />
               <div className='profile-teacher-info'>
                 <h3 className='profile-instrument'>{teacher.instrument}</h3>
-                <p className='profile-years'>Experience: {teacher.years} years</p>
+                <br></br>
+                <p className='profile-years'><b>Experience:</b> {teacher.years} years</p>
+                <br></br>
                 <ul className='contact'>
                 <li className='contact'><b>Phone #:</b> {teacher.phone}</li> 
                 <li className='contact'><b>Email:</b> {teacher.email}</li>
                 </ul>
                 <br></br>
                 <p className='profile-experience-title'><b>Teaching Experience:</b></p>
-                  <p>{teacher.experience}</p>
+                  <p className='experience-info'>{teacher.experience}</p>
               </div>
             </div>
         ))}

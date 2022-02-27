@@ -6,7 +6,8 @@ function TeacherCard({ teachers:{id}, teachers, onDeleteClick }) {
   const [isLiked, setIsLiked] = useState("false");
 
 
-  function handleClick(){
+  function handleClick(e){
+    console.log(e.target.key)
     fetch(`http://localhost:3000/teachers/${id}`, {//pull in id from click)
       method: "DELETE",
   })
@@ -14,12 +15,10 @@ function TeacherCard({ teachers:{id}, teachers, onDeleteClick }) {
     .then(() => onDeleteClick(id))
   }
 
-  
-
   return (
     <>
-      {teachers.map((teacher, index) => (
-        <div className='teacher-card-div' key={index}>
+      {teachers.map((teacher) => (
+        <div className='teacher-card-div' key={teacher.id}>
         <h2 className='teacher-name'>{teacher.name}</h2>
         <Link to={`/teacher/${teacher.name}`}>
           <img 

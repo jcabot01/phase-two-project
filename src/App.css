@@ -62,6 +62,8 @@ body {
 .teacher-name {
   font-size: x-large;
   align-content: center;
+  border: 8px blue;
+
 }
 
 .teacher-card-div {
@@ -73,7 +75,7 @@ body {
   margin-left: 5%;
   align-items: center;
   border-width: 5px;
-  border-color: blue;
+  
 }
 
 section {
@@ -111,7 +113,7 @@ section {
 
 
 .profile-container {
-  margin-top: 40px;
+  margin-top: 20px;
   border-width: 4px;
   border-color: blue;
 }
@@ -124,8 +126,8 @@ section {
 .profile-teacher-image {
   margin-top: 20px;
   margin-left: 33%;
-  height: 550px;
-  width: 430px;
+  height: 450px;
+  width: 330px;
 }
 .profile-experience-title {
   margin-left: 50px;
@@ -133,15 +135,44 @@ section {
 
 .profile-teacher-name {
   margin-left: 33%;
+  font-size: xx-large;
+}
+
+.profile-teacher-info {
+  margin-left: 30%;
+}
+.profile-instrument {
+  font-size: xx-large;
+  margin-left: 19%;
 }
 
 .contact {
   text-decoration: underline;
 }
-/* className='teacher-name' */
 
+.experience-info {
+  margin-left: 5%;
+  margin-right: 43%;
+}
 
-/* className='years' */
+/* form CSS */
+.add-a-new-teacher-header {
+  margin-top: 50px;
+  margin-left: 45%;
+}
 
-/* className=' */
-/* className='profile-card' */
+.new-teacher-form {
+  display: grid;
+  max-width: 250px;
+  padding-top: 5px;
+  padding-top: 10px;
+  align-items: center;
+  margin-left: 43%;
+  margin-top: 50px;
+}
+
+.submit-btn {
+  margin-left: 16%;
+  margin-right: 9%;
+  margin-top: 15px;
+}

@@ -69,9 +69,9 @@ function Form({ onTeacherFormSubmit }) {
   };
 
   return (
-    <div className='new-teacher-form'>
-      <h2>Add a New Teacher</h2>
-      <form onSubmit={handleSubmit}>
+    <div>
+      <h2 className='add-a-new-teacher-header' >Add a New Teacher</h2>
+      <form className='new-teacher-form' onSubmit={handleSubmit}>
         <input type="text" name="name" placeholder='First and Last Name' value={name} onChange={handleName} />
         <input type="text" name="instrument" placeholder='Instrument' value={instrument} onChange={handleInstrument} />
         <input type="text" name="image" placeholder='image URL' value={image} onChange={handleImage} />
@@ -79,7 +79,7 @@ function Form({ onTeacherFormSubmit }) {
         <input type="text" name="email" placeholder='email@sample.com' value={email} onChange={handleEmail} />
         <input type="tel" name="phone" placeholder='Phone# (123) 456-7890' value={phone} onChange={handlePhone} />
         <input type="text" name="experience" placeholder='teaching experience' value={experience} onChange={handleExperience} />
-        <button type='submit'>Add Teacher</button>
+        <button className='submit-btn' type='submit'>Add Teacher</button>
       </form>
     </div>
   )
