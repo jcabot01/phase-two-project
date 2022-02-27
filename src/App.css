@@ -61,9 +61,6 @@ body {
 
 .teacher-name {
   font-size: x-large;
-  align-content: center;
-  border: 8px blue;
-
 }
 
 .teacher-card-div {
@@ -75,7 +72,6 @@ body {
   margin-left: 5%;
   align-items: center;
   border-width: 5px;
-  
 }
 
 section {
@@ -90,9 +86,18 @@ section {
   margin-left: 20px;
 }
 
+.teacher-instrument {
+  margin-left: 38%;
+}
+
+.teacher-years {
+  margin-left: 27%;
+}
+
 .favorite-btn {
   border: none;
   background: none;
+  margin-left: 46%;
   padding: 0 0.25rem;
   cursor: pointer;
 }
@@ -130,7 +135,8 @@ section {
   width: 330px;
 }
 .profile-experience-title {
-  margin-left: 50px;
+  margin-left: 20px;
+  font-size: large;
 }
 
 .profile-teacher-name {

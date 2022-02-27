@@ -2,12 +2,11 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 
-function TeacherCard({ teachers:{id}, teachers, onDeleteClick }) {
+function TeacherCard({ id, name, instrument, image, years, onDeleteClick }) {
   const [isLiked, setIsLiked] = useState("false");
 
 
-  function handleClick(e){
-    console.log(e.target.key)
+  function handleClick(){
     fetch(`http://localhost:3000/teachers/${id}`, {//pull in id from click)
       method: "DELETE",
   })
@@ -17,26 +16,28 @@ function TeacherCard({ teachers:{id}, teachers, onDeleteClick }) {
 
   return (
     <>
-      {teachers.map((teacher) => (
-        <div className='teacher-card-div' key={teacher.id}>
-        <h2 className='teacher-name'>{teacher.name}</h2>
-        <Link to={`/teacher/${teacher.name}`}>
+      
+        <div className='teacher-card-div' key={id}>
+        <h2 className='teacher-name'>{name}</h2>
+        <Link to={`/teacher/${name}`}>
           <img 
             className='teacher-image' 
-            src={teacher.image} 
-            alt={teacher.name}        
+            src={image} 
+            alt={name}        
           />
         </Link>
-        <h3 className='instrument'>{teacher.instrument}</h3>
-        <p className='years'>Experience: {teacher.years} years</p>
+        <h3 className='teacher-instrument'>{instrument}</h3>
+        <p className='teacher-years'>Experience: {years} years</p>
         {isLiked ? (
-          <button className='favorite-btn' 
+          <button 
+            className='favorite-btn' 
             onClick={() => setIsLiked(false)} 
           >
             ☆
           </button>
         ) : (
-          <button 
+          <button
+            className='favorite-btn' 
             onClick={() => setIsLiked(true)} 
           >
             ⭐
@@ -44,8 +45,6 @@ function TeacherCard({ teachers:{id}, teachers, onDeleteClick }) {
         )}
         <button className='delete-btn' onClick={handleClick}>🗑️</button>
       </div>
-      ))}
-      
     </>
   )
 }

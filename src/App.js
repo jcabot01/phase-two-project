@@ -28,7 +28,7 @@ function App() {
     setTeachers([...teachers, newTeacher])
   }
 
-  const searchTeachers = teachers.filter((teacher) => teacher.instrument.toLowerCase().includes(search.toLocaleLowerCase()))
+  const searchTeachers = teachers.filter((teacher) => teacher.instrument.toLowerCase().includes(search.toLowerCase()))
  
   return (
     <Router>

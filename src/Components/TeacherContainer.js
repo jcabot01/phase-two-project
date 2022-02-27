@@ -3,17 +3,20 @@ import TeacherCard from './TeacherCard'
 
 function TeacherContainer({ teachers, onDeleteClick }) {
 
-  //probably need isliked logic and state
-  //probably need a deleteHandler; first do a DELETE fetch to db.json (delete backend), then send a callback up to APP to setTeachers w/ .filter(render teachers != deletedTeacher)
-  
-  
   return (
     <section>
       <div className='teachers-container'>
+        {teachers.map((teacher) => (
           <TeacherCard
-            teachers = {teachers}
-            onDeleteClick = {onDeleteClick}
+          key = {teacher.id}
+          id = {teacher.id}
+          name = {teacher.name}
+          instrument = {teacher.instrument}
+          image = {teacher.image}
+          years = {teacher.years}
+          onDeleteClick = {onDeleteClick}
           />
+        ))}
       </div>
     </section>
   )
