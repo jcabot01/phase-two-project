@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Phase 2 Project:  "Teacher Findr"
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+Imagine you are a recruiter looking to hire more teachers for your school district.  LinkdIn can be a bit cumbersome, so you decide to create a database of potential candidates that contains the infomation you want quick access to right away.    
 
-### `npm start`
+### Open the App
+Upon opening the web application, you are greeted with the current rendering of your database.  Each candidate has a "card"; including their name, image, instrument, years of experience, and two buttons.  One button has a star toggle, so you can "favorite" that candidate.  Also, maybe one of the candidate isn't what you want, so you can delete them using the trash-can button. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Additional functionality
+- **Search Bar:**  The Homepage feature a search bar, so you can easily whitle down your search the candidates for the **instrument** you want, so you will only look at the candidate with Percussion expertise.    
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Profile Page:**   If you click on the image of a candidate on the Homepage, you will be directed to a new URL, containing more infomation about the candidate, including: contact info & a brief description of their teaching career thus far.
+- **Add New Teacher Form:**  From anywhere on the webpage, you can click on the **+ Add New** navigation link, and you will be redirected to the webform, which upon submit, you can add a new teacher to the database. 
+- **Home:** Of course if you ever get lost, the Home button will take you back to the gallery of candidates.
 
-### `npm test`
+## Tech
+The application was created in React.js :
+"react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-router-dom": "^6.2.1",
+        "uuid": "^8.3.2",
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The public repository can be found [here](https://github.com/jcabot01/phase-two-project) on GitHub.
