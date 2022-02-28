@@ -109,11 +109,6 @@ section {
   cursor: pointer;
 }
 
-.delete-btn:hover {
-  border-color: firebrick;
-  cursor: pointer;
-}
-
 /* profile page CSS is below this line */
 
 
