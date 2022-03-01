@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-
-import TeacherContainer from "./Components/TeacherContainer"
-import Search from "./Components/Search";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+//components
+import Nav from "./Components/Nav";
+import TeacherContainer from "./Components/TeacherContainer";
 import TeacherProfile from "./Components/TeacherProfile";
 import Form from "./Components/Form";
 
@@ -32,12 +32,7 @@ function App() {
  
   return (
     <Router>
-      <nav className="nav">
-        <h1 className="brand-name">Teacher Findr</h1>
-          <Link className="home" to="/">Home</Link>
-          <Link className="add-new" to="/form">+ Add New</Link>
-            <Search search={search} setSearch={setSearch} />
-      </nav>
+      <Nav setSearch={setSearch} search={search}/>
       <Routes>
         <Route path="/form" element={<Form onTeacherFormSubmit={onTeacherFormSubmit}/>} />
         <Route path="/teacher/:name" element={<TeacherProfile teachers={teachers}/>} />

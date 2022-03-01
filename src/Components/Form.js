@@ -36,8 +36,10 @@ function Form({ onTeacherFormSubmit }) {
       body: JSON.stringify(addNewTeacher),
     })
       .then((res) => res.json())
-      .then((newTeacher) => onTeacherFormSubmit(newTeacher))
-      navigate('/')
+      .then((newTeacher) => {
+        onTeacherFormSubmit(newTeacher)
+        navigate('/')
+    })
   };
 
   function handleName(e) {
