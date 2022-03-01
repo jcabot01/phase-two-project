@@ -13,7 +13,7 @@ function App() {
   const [teachers, setTeachers] = useState([]) //JSON data, set to an array
 
   useEffect(() => {
-    fetch("http://localhost:3000/teachers") 
+    fetch("https://sheltered-depths-14822.herokuapp.com/teachers") 
     .then((res) => res.json())
     .then((teacherObjs) => setTeachers(teacherObjs))  
   }, [])
