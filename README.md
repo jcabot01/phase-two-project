@@ -3,11 +3,11 @@
 
 ## Introduction
 
-Imagine you are a recruiter looking to hire more teachers for your school district.  LinkdIn can be a bit cumbersome, so you decide to create a database of potential candidates that contains the infomation you want quick access to right away.    
+Imagine you are a recruiter looking to hire more teachers for your school district.  LinkedIn can be a bit cumbersome, so you decide to create a database of potential candidates that contains the infomation you want quick access to right away.    
 
 ## Demo
 
-![YAP](https://imgur.com/oYl07zq.gif)
+![YAP](https://imgur.com/a/j6kYNIm.gif)
 
 
 ### Open the App
