@@ -5,6 +5,11 @@
 
 Imagine you are a recruiter looking to hire more teachers for your school district.  LinkdIn can be a bit cumbersome, so you decide to create a database of potential candidates that contains the infomation you want quick access to right away.    
 
+## Demo
+
+![YAP](https://imgur.com/oYl07zq.gif)
+
+
 ### Open the App
 Upon opening the web application, you are greeted with the current rendering of your database.  Each candidate has a "card"; including their name, image, instrument, years of experience, and two buttons.  One button has a star toggle, so you can "favorite" that candidate.  Also, maybe one of the candidate isn't what you want, so you can delete them using the trash-can button. 
 
