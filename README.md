@@ -7,7 +7,7 @@ Imagine you are a recruiter looking to hire more teachers for your school distri
 
 ## Demo
 
-![YAP](https://imgur.com/a/j6kYNIm.gif)
+![](https://media.giphy.com/media/6XjnBPd4LvT64CWMoh/giphy.gif)
 
 
 ### Open the App
