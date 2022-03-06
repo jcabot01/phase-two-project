@@ -31,11 +31,16 @@ The application was created in React.js :
 ## Installation
 The public repository can be found [here](https://github.com/jcabot01/phase-two-project) on GitHub.
 In your terminal:
-        1. `$ git clone git@github.com:jcabot01/phase-two-project.git` to clone the git repo
-        2. `$ npm install` to install the dependencies associated with this project.
-        3. `$ code .` to run VS Code
-        4. `$ json-server --watch db.json` to run mock-server first
-        5. `$ npm start` to React development environment.  You might be prompted to switch ports because they might be running on the same one, so say "yes" to have the App pick a separate port.
+
+1. `$ git clone git@github.com:jcabot01/phase-two-project.git` to clone the git repo
+
+2. `$ npm install` to install the dependencies associated with this project.
+
+3. `$ code .` to run VS Code
+
+4. `$ json-server --watch db.json` to run mock-server first
+
+5. `$ npm start` to React development environment.  You might be prompted to switch ports because they might be running on the same one, so say "yes" to have the App pick a separate port.
 
 We are still working on the deployment process.
 
