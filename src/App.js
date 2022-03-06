@@ -13,7 +13,7 @@ function App() {
   const [teachers, setTeachers] = useState([]) //JSON data, set to an array
 
   useEffect(() => {
-    fetch("https://sheltered-depths-14822.herokuapp.com/teachers") 
+    fetch("http://localhost:3000/teachers") 
     .then((res) => res.json())
     .then((teacherObjs) => setTeachers(teacherObjs))  
   }, [])
@@ -40,7 +40,6 @@ function App() {
         <Route path ="*" element="404 PAGE NOT FOUND"/>
       </Routes>
     </Router>
-    
   );
 }
 

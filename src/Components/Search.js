@@ -1,10 +1,13 @@
 import React from 'react'
 
+
+
+
 function Search({ search, setSearch}) { //pass search up to App; to adjust state of Gallery
   
   function handleSearch(e) {
     setSearch(e.target.value)
-  }
+  };
 
   return (
     <div className="search-bar">
@@ -17,6 +20,6 @@ function Search({ search, setSearch}) { //pass search up to App; to adjust state
       />
     </div>
   )
-}
+};
 
 export default Search

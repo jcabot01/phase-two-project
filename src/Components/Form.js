@@ -11,8 +11,6 @@ function Form({ onTeacherFormSubmit }) {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [experience, setExperiece] = useState("");
-
-  
   
   function handleSubmit(e) {
     e.preventDefault();

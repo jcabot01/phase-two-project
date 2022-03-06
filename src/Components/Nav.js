@@ -14,6 +14,6 @@ function Nav({ search, setSearch }) {
             <Search search={search} setSearch={setSearch} />
       </nav>
   )
-}
+};
 
 export default Nav
