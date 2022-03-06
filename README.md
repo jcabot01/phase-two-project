@@ -22,20 +22,20 @@ Upon opening the web application, you are greeted with the current rendering of 
 
 ## Tech
 The application was created in React.js :
-**"react": "^17.0.2"**,
-**"react-dom": "^17.0.2"**,
-**"react-router-dom": "^6.2.1"**,
-**"uuid": "^8.3.2"**,
+- **"react": "^17.0.2"**,
+- **"react-dom": "^17.0.2"**,
+- **"react-router-dom": "^6.2.1"**,
+- **"uuid": "^8.3.2"**,
 
 
 ## Installation
 The public repository can be found [here](https://github.com/jcabot01/phase-two-project) on GitHub.
 In your terminal:
-    `$ git clone git@github.com:jcabot01/phase-two-project.git` to clone the git repo
-    `$ npm install` to install the dependencies associated with this project.
-    `$ code .` to run VS Code
-    `$ json-server --watch db.json` to run mock-server first
-    `$ npm start` to React development environment.  You might be prompted to switch ports because they might be running on the same one, so say "yes" to have the App pick a separate port.
+    - `$ git clone git@github.com:jcabot01/phase-two-project.git` to clone the git repo
+    - `$ npm install` to install the dependencies associated with this project.
+    - `$ code .` to run VS Code
+    - `$ json-server --watch db.json` to run mock-server first
+    - `$ npm start` to React development environment.  You might be prompted to switch ports because they might be running on the same one, so say "yes" to have the App pick a separate port.
 
 We are still working on the deployment process.
 
