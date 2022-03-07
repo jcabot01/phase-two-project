@@ -4,14 +4,13 @@ import { useParams } from "react-router-dom";
 function TeacherProfile({ teachers }) {
   const { name } = useParams();
   
-  
   return (
     <section>
       <div className='profile-container'>
         {teachers
           .filter((teacher) => teacher.name === name)
-          .map((teacher, id) => (
-            <div key={id} className='profile-card'>
+          .map((teacher) => (
+            <div key={teacher.id} className='profile-card'>
               <h2 className='profile-teacher-name'>{teacher.name}</h2>
               <img 
                 className='profile-teacher-image' 
@@ -34,7 +33,7 @@ function TeacherProfile({ teachers }) {
             </div>
         ))}
       </div>
-      </section>
+    </section>
   )
 }
 
