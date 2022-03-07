@@ -13,18 +13,18 @@ function TeacherCard({ id, name, instrument, image, years, onDeleteClick }) {
     .then((res) => res.json())
     .then(() => onDeleteClick(id))
   };
-
+  
     return (
-        <>
-            <div className='teacher-card-div' key={id}>
+      <>
+        <div className='teacher-card-div' key={id}>
             <h2 className='teacher-name'>{name}</h2>
-            <Link to={`/teacher/${name}`}>
-              <img 
-                className='teacher-image' 
-                src={image} 
-                alt={name}        
-              />
-            </Link>
+              <Link to={`/teacher/${name}`}>
+                <img 
+                  className='teacher-image' 
+                  src={image} 
+                  alt={name}        
+                />
+              </Link>
             <h3 className='teacher-instrument'>{instrument}</h3>
             <p className='teacher-years'>Experience: {years} years</p>
             {isLiked ? (
@@ -43,9 +43,9 @@ function TeacherCard({ id, name, instrument, image, years, onDeleteClick }) {
               </button>
             )}
             <button className='delete-btn' onClick={handleClick}>🗑️</button>
-          </div>
-        </>
-      )
-    };
+        </div>
+      </>
+    )
+};
 
 export default TeacherCard

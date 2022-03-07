@@ -28,8 +28,8 @@ function App() {
     setTeachers([...teachers, newTeacher])
   }
 
-  const searchTeachers = teachers.filter((teacher) => teacher.instrument.toLowerCase().includes(search.toLowerCase()))
- 
+  const searchTeachers = teachers.filter((teacher) => teacher.instrument.toLowerCase().includes(search.toLowerCase())) //return teachers that match the state of search.  Convert all to lowercase to see if they match.
+
   return (
     <Router>
       <Nav setSearch={setSearch} search={search}/>

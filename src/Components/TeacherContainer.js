@@ -8,13 +8,13 @@ function TeacherContainer({ teachers, onDeleteClick }) {
       <div className='teachers-container'>
         {teachers.map((teacher) => (
           <TeacherCard
-          key = {teacher.id}
-          id = {teacher.id}
-          name = {teacher.name}
-          instrument = {teacher.instrument}
-          image = {teacher.image}
-          years = {teacher.years}
-          onDeleteClick = {onDeleteClick}
+            key = {teacher.id}
+            id = {teacher.id}
+            name = {teacher.name}
+            instrument = {teacher.instrument}
+            image = {teacher.image}
+            years = {teacher.years}
+            onDeleteClick = {onDeleteClick}
           />
         ))}
       </div>
