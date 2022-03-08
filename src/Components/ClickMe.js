@@ -2,29 +2,35 @@ import React from 'react'
 import { useState } from 'react'
 
 function ClickMe() {
-  const [isHello, setIsHello] = useState("");
+  const [text, setText] = useState(""); 
+  const [count, setCount] = useState(0);
 
 
-  function handleHello(e) {
-    console.log(e.target.value)
-    setIsHello(e.target.value)
+  function handleSubmit(e){ 
+    e.preventDefault()   
+    const changingText = text.length
+    setCount(changingText + count)
+    setText("") //clear form
   }
 
-  function counter(){
-
+  function reset(e){
+    setCount(0)
   }
-
-  function handleSubmit(e){
-    e.preventDefault()
-    //logic 
-  }
-
+  
+//render the count to the page {count}
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Hello or Goodbye" value={isHello} onChange={handleHello}></input>
+        <input 
+          type="text"  
+          placeholder="type a word" 
+          value={text} 
+          onChange={(e) => setText(e.target.value)}
+        >
+        </input>
         <button>Click Me</button>
-        <p>Counter</p>
+        <button onClick={reset}>Reset Count</button>
+        <p>Counter {count}</p>
       </form>  
     </div>
   )
